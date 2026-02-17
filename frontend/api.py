@@ -22,3 +22,9 @@ def get(path):
         f"{BASE_URL}{path}",
         headers=auth_headers()
     )
+
+def delete(path):
+    return requests.delete(
+        f"{BASE_URL}{path}",
+        headers=auth_headers()
+    )
