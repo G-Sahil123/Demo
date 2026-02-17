@@ -1,3 +1,6 @@
+from auth import require_auth
+require_auth()
+
 import streamlit as st
 from api import get, post
 
